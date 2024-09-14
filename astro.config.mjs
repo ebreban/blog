@@ -2,6 +2,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://astronaut.github.io',
+    site: 'https://ebreban.github.io',
     base: 'blog',
 });
