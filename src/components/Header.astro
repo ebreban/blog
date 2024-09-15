@@ -1,12 +1,14 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import Hamburger from '../components/Hamburger.astro';
-import ThemeIcon from './ThemeIcon.astro';
+import myImportedImage from '../images/aegon.jpg';
+import { Image } from 'astro:assets';
+const currentPath = Astro.url.pathname;
 ---
-<header>
-  <nav>
+<header class="flex justify-around mt-5 border-b border-white">
+  <Image src={myImportedImage}  class="rounded-full w-16 mr-5 pb-4 hidden lg:block" alt="descriptive text" />
+  <nav class="flex flex-row w-full flex-wrap text-xl items-center">
     <Hamburger />
-    <ThemeIcon />
     <Navigation />
   </nav>
 </header>

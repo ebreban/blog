@@ -4,21 +4,20 @@ import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 const { pageTitle } = Astro.props;
 ---
-<html lang="en">
-  <head>
+<html class="bg-gray-500" lang="en" >
+  <head >
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <title class="text-3xl font-bold mt-10 text-[#b8bb26]">{pageTitle}</title>
   </head>
-  <body>
+  <script async src={`https://www.googletagmanager.com/gtag/js?id=YOUR_MEASUREMENT_ID`}></script>
+  <body >
     <Header />
-    <h1>{pageTitle}</h1>
+    <br />
+    <h1 class="text-3xl font-bold mt-10 text-[#da2d2d]">{pageTitle}</h1>
     <slot />
     <Footer />
-    <script>
-      import "../scripts/menu.js";
-    </script>
   </body>
 </html>

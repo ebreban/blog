@@ -1,7 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home Page";
+import '../styles/global.css'
 ---
-<BaseLayout pageTitle={pageTitle}>
-	<h2>My awesome blog subtitle</h2>
-  </BaseLayout>
+
+<body class="max-w-[900px] mx-auto font-mono bg-[#1d2021] text-[#ffffff] text-sm sm:text-base">
+	<BaseLayout pageTitle={pageTitle}>
+		<main>
+			<div class="flex flex-col gap-5">
+				<p class="mt-5">Hi! I'm a software engineer based in NYC, with a day job centered around building optimized serverless systems and sometimes doing random cool stuff. I love experimenting with new tech and I am currently &#123;<a href="https://www.youtube.com/@t3dotgg" class="text-[#f67f97] underline">diving into the world of web development</a>&#125;!</p>
+				<p>I love soccer and am a lifelong <a class="text-[#f67f97] hover:underline" href="https://en.wikipedia.org/wiki/Manchester_United_F.C.">Manchester United</a> fan. I also enjoy reading/watching fantasy. I've read all the game of thrones books and I love them (PLEASE GIVE ME WINDS OF WINTER ALREADY). I'm currently reading <a class="text-[#f67f97] hover:underline" href="https://www.goodreads.com/book/show/2767793-the-hero-of-ages">The Hero of Ages</a> by Brandon Sanderson (if you got any good recs, message me).</p>
+				<p>Feel free to <a class="text-[#f67f97] hover:underline" href="https://x.com/anxious_aegon">reach out.</a></p>
+			</div>
+		</main> 
+	</BaseLayout>
+</body>
