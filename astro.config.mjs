@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   
-  site: 'https://anxiousaegon.dev',
+  site: 'https://ebreban.github.io',
   base: '/blog/',
   integrations: [
     tailwind(),
